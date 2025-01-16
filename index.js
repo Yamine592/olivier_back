@@ -15,6 +15,9 @@ app.use(
         origin: "*",
     })
 );
+// on indique le chemin des routes 
+const routes =  require("./routes/product");
+app.use(routes);
 
 // on indique  que l'application va écouter sur le port 5000 et on retourne un message dans le terminal
 app.listen(5000, () => {
